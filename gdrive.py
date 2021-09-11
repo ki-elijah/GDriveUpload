@@ -11,4 +11,4 @@ for x in os.listdir(path):
     y = drive.CreateFile({title: x})
     y.SetContentFile(os.path.join(path, x))
     y.Upload()
-    y = NoneType
+    y = None
