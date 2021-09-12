@@ -1,10 +1,10 @@
-from pydrive.drive import GoogleDrive
 from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
 
-gat = GoogleAuth()
-gat.LocalWebserverAuth()
+gauth = GoogleAuth()
+gauth.LocalWebserverAuth()
 
-dr = GoogleDrive(gat)
+drive = GoogleDrive(gauth)
 path = "/home/elabz/Documents/Books"
 
 for x in os.listdir(path):
